@@ -29,18 +29,18 @@ var Processor = function (task, id, socket, callback) {
   // Check command to apply appropriate color flags
   switch (command) {
   case 'npm':
-    proc = spawn(command, [args, '--color', 'always'], { cwd: cwd });
+    proc = spawn(command, args.concat(['--color', 'always']), { cwd: cwd });
     break;
   case 'grunt':
     if (args.length) {
-      proc = spawn(command, [args, '--color'], { cwd: cwd });
+      proc = spawn(command, args.concat(['--color']), { cwd: cwd });
     } else {
       proc = spawn(command, ['--color'], { cwd: cwd });
     }
     break;
   default:
     if (args.length) {
-      proc = spawn(command, [args], { cwd: cwd });
+      proc = spawn(command, args, { cwd: cwd });
     } else {
       proc = spawn(command, [], { cwd: cwd });
     }
