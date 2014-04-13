@@ -3,7 +3,7 @@
 I recently left my job. Several weeks later I received what could essentially be
 considered a Cease and Desist letter from my previous employer's legal team.
 
-During my last week on the job I worked on Avow. I did not do so on company time
+During my last week on the job I worked on Avow (March 24-28). I did not do so on company time
 (as proven by the git commit logs), I worked on it in the evenings after I had
 completed my work for the day.
 
