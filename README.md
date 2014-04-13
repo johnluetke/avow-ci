@@ -24,7 +24,7 @@ Additionally I don't have the time to invest in dealing with egregious claims an
 accusations as I start a new job and am focused on new successes.
 
 As of April 18, 2014 I will be completely removing this git repository and it's
-history to comply with appendTo's request.
+history to comply with my former employer's request.
 
 I can only hope that in the spirit of innovation and open source, my former employer makes
 the decision to reinstate the repository (under their terms if they would like) so that
