@@ -30,3 +30,5 @@ I can only hope that in the spirit of innovation and open source, my former empl
 the decision to reinstate the repository (under their terms if they would like) so that
 those of you who found this tool useful can continue to utilize it without
 facing legal action.
+
+[Kent Safranski](http://www.fluidbyte.net)/[@fluidbyte](http://www.twitter.com/fluidbyte)
