@@ -1,0 +1,36 @@
+#notification {
+    position: fixed;
+    z-index: 999;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    background: #1a1a1a;
+    color: #000;
+    padding: 8px;
+    text-align: center;
+    text-shadow: none;
+    opacity: 0;
+    transition: .3s ease top, .3s ease opacity;
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,.2);
+
+    &.error, &.success {
+        top: 0;
+        opacity: 1;
+    }
+
+    &.error {
+        background-color: #FFCC00;
+
+        i:before {
+            content: "\f12a";
+        }
+    }
+
+    &.success {
+        background-color: #2EB82E;
+
+        i:before {
+            content: "\f00c";
+        }
+    }
+}

@@ -1,0 +1,94 @@
+label {
+    display: block;
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.icon-input {
+    display: block;
+    position: relative;
+}
+
+.icon-input i {
+    display: block;
+    position: absolute;
+    width: 43px;
+    text-align: center;
+    top: 7px;
+    left: 0;
+    z-index: 9999;
+    color: #fff;
+}
+
+input, select, .select, textarea {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 5px 10px 5px 50px;
+    color: #333;
+    font-family: 'open-sans-light', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    background-image: linear-gradient(to right, #5C5C5C 0%, #5C5C5C 40px, #fff 41px, #fff 100%);
+}
+
+textarea {
+    font-family: 'open-sans-light', Arial, Helvetica, sans-serif;
+    min-height: 150px;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid #999; outline: none;
+}
+
+/* Buttons */
+
+button {
+    display: inline-block;
+    width: auto;
+    margin: 5px 15px 15px 0;
+    padding: 6px 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #9c0200;
+    font-family: 'open-sans-light', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &.btn-left {
+        margin-right: 0;
+        border-radius: 4px 0 0 4px;
+    }
+
+    &.btn-mid {
+        margin-left: -4px; /* Inline-block fix */
+        margin-right: 0;
+        border-radius: 0;
+        border-left: 1px solid transparent;
+    }
+
+    &.btn-right {
+        margin-left: -4px; /* Inline-block fix */
+        margin-right: 0;
+        border-radius: 0 4px 4px 0;
+        border-left: 1px solid transparent;
+    }
+
+    &:hover {
+        color: #fff;
+        border: 1px solid #999;
+        box-shadow: 1px 1px 3px 0 rgba(100, 100, 100, .1);
+    }
+
+}
+
+::-webkit-input-placeholder {color: #b0b0b0; }
+:-moz-placeholder { color: #b0b0b0; }
+.placeholder { color: #b0b0b0; }

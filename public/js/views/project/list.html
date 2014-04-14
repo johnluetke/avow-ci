@@ -1,0 +1,56 @@
+<button class="project-list-create-btn" data-bind="click: createProject">New Project</button>
+
+<h2>Projects List</h2>
+
+<table class="datatable">
+    <thead>
+        <tr>
+            <th class="icon">Status</th>
+            <th class="icon">Build</th>
+            <th>Project</th>
+            <th class="icon">Edit</th>
+        </tr>
+    </thead>
+    <!-- ko if: projects().length -->
+    <tbody data-bind="foreach: projects">
+        <tr>
+            <td data-bind="attr: { class: statusClass }">
+                <!-- ko if: latestBuildURL -->
+                <a data-bind="attr: { href: latestBuildURL }">
+                    <i class="fa"></i>
+                </a>
+                <!-- /ko -->
+                <!-- ko ifnot: latestBuildURL -->
+                <i class="fa"></i>
+                <!-- /ko -->
+            </td>
+            <td>
+                <a class="build-spinner" data-bind="click: $root.startBuild, attr: { 'data-project': name }">
+                    <i class="fa fa-repeat"></i>
+                </a>
+            </td>
+            <td>
+                <a data-bind="attr: { href: url }">
+                    <span class="project-list-title" data-bind="text: name"></span>
+                    <span class="project-list-repo" data-bind="text: repo"></span>
+                    &nbsp;(<span class="project-list-branch" data-bind="text: branch"></span>)
+                </a>
+            </td>
+            <td>
+                <a data-bind="attr: {href: config }"><i class="fa fa-cog"></i></a>
+            </td>
+        </tr>
+    </tbody>
+    <!-- /ko -->
+
+    <!-- ko ifnot: projects().length -->
+    <tbody>
+        <tr>
+            <td colspan="5" class="project-list-create">
+                <a data-bind="click: createProject">Create A Project &raquo;</a>
+            </td>
+        </tr>
+    </tbody>
+    <!-- /ko -->
+    </tbody>
+</table>
